@@ -1,0 +1,44 @@
+<div class="flex flex-col p-4">
+  <h1 class="text-sky-900 font-bold text-6xl">Portfolio</h1>
+  <div class="flex flex-row justify-between">
+    <p class="text-xl">
+      View the different projects I've done over the last years!
+    </p>
+    <div class="flex flex-row">
+      @for (filter of filters; track filter) {
+      <button
+        class="border border-sky-900 text-lg text-white p-1 mb-2
+        {{ $first ? 'rounded-l-lg' : '' }}
+        {{ $last ? 'rounded-r-lg' : '' }}
+        {{ selectedFilter == filter ? 'bg-sky-600' : 'bg-sky-800' }}"
+        (click)="filterData(filter)"
+      >
+        {{ filter }}
+      </button>
+      }
+    </div>
+  </div>
+
+  <div class="columns-3 gap-4">
+    @for (item of portfolioItems; track item.name) {
+    <div
+      class="portfolio-item rounded-lg border border-gray-300 break-inside-avoid-column mb-4
+      {{
+        selectedFilter == 'All' || item.tags.includes(selectedFilter)
+          ? 'show-item'
+          : 'hide-item'
+      }}"
+    >
+      <img [src]="item.imgUrl" class="rounded-t-lg" />
+      <div class="p-4">
+        <p class="text-sky-900 text-xl font-bold">{{ item.name }}</p>
+        @for (expertise of item.expertise; track expertise) {
+        <span class="font-light text-sm">{{ expertise }}</span>
+        @if (!$last) {
+        <span class="font-light text-sm">, </span>
+        } }
+      </div>
+    </div>
+    }
+  </div>
+</div>
