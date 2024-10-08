@@ -1,28 +1,43 @@
 <div class="max-w-screen h-full">
-  <div
-    class="flex flex-row h-12 max-w-screen border-sky-50 border-b bg-sky-100 px-5 justify-between items-center"
-  >
-    <h1 class="text-sky-900 text-2xl">Anouk's Portfolio</h1>
-    <nav class="flex flex-row">
+  <div class="flex flex-row h-12 max-w-screen px-10 items-center">
+    <nav class="flex flex-row w-full justify-start">
       <ul>
-        <li class="px-2">
-          <a
-            routerLink="/about-me"
-            routerLinkActive="active"
-            ariaCurrentWhenActive="page"
-            >About me</a
-          >
-        </li>
         <li class="px-2">
           <a
             routerLink="/portfolio"
             routerLinkActive="active"
             ariaCurrentWhenActive="page"
+            class="text-blue-800 text-xl"
             >Portfolio</a
+          >
+        </li>
+        <li class="px-2">
+          <a
+            routerLink="/about-me"
+            routerLinkActive="active"
+            ariaCurrentWhenActive="page"
+            class="text-blue-800 text-xl"
+            >About me</a
           >
         </li>
       </ul>
     </nav>
+    <h1
+      class="text-blue-800 text-3xl font-bold logo flex w-full justify-center"
+    >
+      Anouk de Graaf
+    </h1>
+    <div class="flex gap-4 py-2 w-full justify-end">
+      @for (button of buttons; track button) {
+      <a [href]="button.link">
+        <ng-icon
+          [name]="button.icon"
+          size="1.5rem"
+          color="rgb(30 64 175)"
+        ></ng-icon>
+      </a>
+      }
+    </div>
   </div>
   <router-outlet />
 </div>
