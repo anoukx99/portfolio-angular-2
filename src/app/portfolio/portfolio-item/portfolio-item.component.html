@@ -1,1 +1,46 @@
-<p>portfolio-item works!</p>
+<div class="flex w-1/2 mx-auto py-20">
+  @if(item$) {
+  <div class="w-full flex flex-col">
+    <div>
+      <h1 class="text-3xl text-blue-800">{{ item$.name }}</h1>
+      <p>{{ item$.description }}</p>
+      @for (expertise of item$.expertise; track expertise) {
+      <span class="font-bold">{{ expertise }}</span>
+      @if (!$last) {
+      <span class="font-bold">, </span>
+      } }
+    </div>
+
+    <c-carousel class="pt-20">
+      <c-carousel-indicators></c-carousel-indicators>
+      <c-carousel-inner>
+        @for (slide of item$.slides; track slide) {
+        <c-carousel-item>
+          <img
+            alt="{{ slide.subtitle }}"
+            class="d-block w-100"
+            loading="lazy"
+            src="{{ slide.src }}"
+          />
+          <c-carousel-caption class="d-none d-md-block">
+            <p class="font-bold text-sm drop-shadow">
+              {{ slide.subtitle }}
+            </p>
+          </c-carousel-caption>
+        </c-carousel-item>
+        }
+      </c-carousel-inner>
+      <c-carousel-control
+        [routerLink]
+        caption="Previous"
+        direction="prev"
+      ></c-carousel-control>
+      <c-carousel-control
+        [routerLink]
+        caption="Next"
+        direction="next"
+      ></c-carousel-control>
+    </c-carousel>
+  </div>
+  }
+</div>

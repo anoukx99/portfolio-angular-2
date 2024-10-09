@@ -5,9 +5,16 @@ export const PortfolioItems = [
         cloud application, it is possible to change the content on the screens. The front-end is build using Nuxt, Vue, Primevue and TailwindCSS. One of the 
         challenges was that the customer wanted configurable roles with its own permissions. Based on the permissions, certain pages and buttons were shown or 
         hidden. The content management system is currently being tested with end users.`,
-        imgUrl: 'content-management.PNG',
+        imgUrl: 'cms/cms1.PNG',
         expertise: ['Vue.js', 'Tailwind CSS', "UI Design", "HTML", "CSS", "Javascript", "Figma", "Docker", "Gitlab"],
-        tags: ["Front-end"]
+        tags: ["Front-end"],
+        weblink: "CMS",
+        slides: [
+            { id: 0,
+                src: "/images/omni/omni1.JPG",
+                subtitle: "Omni consists out of 4 vibrating cups connected to a hub."
+            },
+        ]
     },
     {
         name: "FAT PLAYER UI",
@@ -15,9 +22,16 @@ export const PortfolioItems = [
         However, editing an XML file is not a userfriendly method to configure the media player. Therefore, I was asked to design a user interface. 
         I have created different mock-ups and discussed these with the company. After refining the UI, I made an application to configure the media player. 
         The application converts the graphical representation of the media into a working XML file which can be uploaded to the media player.`,
-        imgUrl: 'fatplayer.png',
+        imgUrl: 'fatplayer/fatplayer.png',
         expertise: ['XML', "Github", "UI Design", "HTML", "CSS", "Javascript"],
-        tags: ["Front-end"]
+        tags: ["Front-end"],
+        weblink: "fat-player",
+        slides: [
+            { id: 0,
+                src: "/images/omni/omni1.JPG",
+                subtitle: "Omni consists out of 4 vibrating cups connected to a hub."
+            },
+        ]
     },
     {
         name: "Skeuvel.nl",
@@ -26,9 +40,16 @@ export const PortfolioItems = [
         that the every member has a membership for approximately 3 years. Moreover, the board of Skeuvel changes every year, which means that each year another person
         is responsible for maintaining the website. Therefore, it was important to make a website which was super easy to maintain. Therefore, it was chosen to make
         the website in Wordpress combined with Elementor. This way, editing the website can be done in a very visual way.`,
-        imgUrl: 'skeuvel-website.PNG',
+        imgUrl: 'skeuvel/skeuvel1.PNG',
         expertise: ['Web design', "UI Design", "Wordpress", "Elementor"],
-        tags: ["Front-end"]
+        tags: ["Front-end"],
+        weblink: 'skeuvel',
+        slides: [
+            { id: 0,
+                src: "/images/omni/omni1.JPG",
+                subtitle: "Omni consists out of 4 vibrating cups connected to a hub."
+            },
+        ]
     },
     {
         name: "Wearable to improve Inline Skating posture",
@@ -36,9 +57,16 @@ export const PortfolioItems = [
         haptic feedback. During the graduation project, I have research where, when and how haptic feedback should be given to an inline skater. Next,
         I created a prototype which an inline skater could wear and which gives feedback based on the posture of the skaters. This prototype was tested
         with multiple inline skaters to see whether the use of such a wearable has a positive influence on the posture. `,
-        imgUrl: 'InlineSkate.jpg',
+        imgUrl: 'inline-skating/skating1.jpg',
         expertise: ['Arduino', 'Haptic Feedback', 'IMU', "UX Design", "ESP32", "C++"],
-        tags: ["Hardware"]
+        tags: ["Hardware"],
+        weblink: "inline-skating",
+        slides: [
+            { id: 0,
+                src: "/images/omni/omni1.JPG",
+                subtitle: "Omni consists out of 4 vibrating cups connected to a hub."
+            },
+        ]
     },
     {
         name: "OMNI: A reaction game for visually impaired people",
@@ -48,9 +76,24 @@ export const PortfolioItems = [
         based on vibrations. It works with 5 different cups which are connected to a Hub. This Hub sends signals to the cup, which can vibrate. Based
         on the vibrations, the users can play games. I have continued working on OMNI during my graduation project for Creative Technology by interviewing
         a therapist at Visio to get more insights in the target group. Based on these insights, I have developed new game modes for OMNI.`,
-        imgUrl: 'omni.JPG',
+        imgUrl: 'omni/omni1.JPG',
         expertise: ['Arduino', 'Haptic Feedback', "User research", "Human Centered Design", "C++"],
-        tags: ["Hardware"]
+        tags: ["Hardware"],
+        weblink: "omni",
+        slides: [
+            { id: 0,
+                src: "/images/omni/omni1.JPG",
+                subtitle: "Omni consists out of 4 vibrating cups connected to a hub."
+            },
+            { id: 1,
+              src: "/images/omni/omni_ddw.jpg",
+              subtitle: "At Dutch Design Week 2018, we got the chance to display OMNI! We got a lot of positive reactions."
+            },
+            { id: 1,
+                src: "/images/omni/omni.jpg",
+                subtitle: "A visitor of Dutch Design Week playing with the game."
+            },
+        ]
     },
 
     {
@@ -59,6 +102,13 @@ export const PortfolioItems = [
         If you are excited about my portfolio or have feedback, contact me!`,
         imgUrl: 'no_image.png',
         expertise: ['Angular', 'Tailwind CSS', "UI Design", "HTML", "CSS", "Javascript"],
-        tags: ['Front-end']
+        tags: ['Front-end'],
+        weblink: 'angular-portfolio',
+        slides: [
+            { id: 0,
+                src: "/images/omni/omni1.JPG",
+                subtitle: "Omni consists out of 4 vibrating cups connected to a hub."
+            },
+        ]
     },
 ]

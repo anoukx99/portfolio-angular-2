@@ -3,6 +3,9 @@
 @tailwind components;
 @tailwind utilities;
 
+@import "@coreui/coreui/scss/coreui";
+
+
 @font-face {
     font-family: 'NothingYouCouldDo';
     src: 'assets/fonts/NothingYouCouldDo-Regular.tff';

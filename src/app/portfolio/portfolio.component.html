@@ -18,24 +18,26 @@
 
   <div class="columns-3 gap-4">
     @for (item of portfolioItems; track item.name) {
-    <div
-      class="portfolio-item rounded-lg border border-gray-300 break-inside-avoid-column mb-4
+    <a routerLink="/portfolio/{{ item.weblink }}">
+      <div
+        class="portfolio-item rounded-lg border border-gray-300 break-inside-avoid-column mb-4
       {{
-        selectedFilter == 'All' || item.tags.includes(selectedFilter)
-          ? 'show-item'
-          : 'hide-item'
-      }}"
-    >
-      <img [src]="item.imgUrl" class="rounded-t-lg" />
-      <div class="p-4">
-        <p class="text-blue-900 text-xl font-bold">{{ item.name }}</p>
-        @for (expertise of item.expertise; track expertise) {
-        <span class="font-light text-sm">{{ expertise }}</span>
-        @if (!$last) {
-        <span class="font-light text-sm">, </span>
-        } }
+          selectedFilter == 'All' || item.tags.includes(selectedFilter)
+            ? 'show-item'
+            : 'hide-item'
+        }}"
+      >
+        <img src="images/{{ item.imgUrl }}" class="rounded-t-lg" />
+        <div class="p-4">
+          <p class="text-blue-900 text-xl font-bold">{{ item.name }}</p>
+          @for (expertise of item.expertise; track expertise) {
+          <span class="font-normal text-sm">{{ expertise }}</span>
+          @if (!$last) {
+          <span class="font-normal text-sm">, </span>
+          } }
+        </div>
       </div>
-    </div>
+    </a>
     }
   </div>
 </div>

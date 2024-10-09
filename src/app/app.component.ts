@@ -3,6 +3,7 @@ import { RouterLink, RouterLinkActive, RouterOutlet } from '@angular/router';
 import { NgIconComponent, provideIcons } from '@ng-icons/core';
 import { bootstrapLinkedin, bootstrapGithub, bootstrapEnvelopeAtFill} from '@ng-icons/bootstrap-icons';
 
+
 @Component({
   selector: 'app-root',
   standalone: true,
