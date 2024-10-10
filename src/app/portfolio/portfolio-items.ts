@@ -11,8 +11,8 @@ export const PortfolioItems = [
         weblink: "CMS",
         slides: [
             { id: 0,
-                src: "/images/omni/omni1.JPG",
-                subtitle: "Omni consists out of 4 vibrating cups connected to a hub."
+                src: "/images/cms/cms1.PNG",
+                subtitle: "Page to change content on the screen."
             },
         ]
     },
@@ -27,9 +27,17 @@ export const PortfolioItems = [
         tags: ["Front-end"],
         weblink: "fat-player",
         slides: [
-            { id: 0,
-                src: "/images/omni/omni1.JPG",
-                subtitle: "Omni consists out of 4 vibrating cups connected to a hub."
+            {   id: 0,
+                src: "/images/fatplayer/fatplayer.png",
+                subtitle: "The final design for the UI to configure the FAT player."
+            },
+            {   id: 1,
+                src: "/images/fatplayer/GUI1.png",
+                subtitle: "One of the first designs for the UI."
+            },
+            {   id: 1,
+                src: "/images/fatplayer/GUI2.png",
+                subtitle: "One of the first designs for the UI."
             },
         ]
     },
@@ -46,8 +54,8 @@ export const PortfolioItems = [
         weblink: 'skeuvel',
         slides: [
             { id: 0,
-                src: "/images/omni/omni1.JPG",
-                subtitle: "Omni consists out of 4 vibrating cups connected to a hub."
+                src: "/images/skeuvel/skeuvel1.PNG",
+                subtitle: "Front page of the Skeuvel website."
             },
         ]
     },
@@ -63,8 +71,16 @@ export const PortfolioItems = [
         weblink: "inline-skating",
         slides: [
             { id: 0,
-                src: "/images/omni/omni1.JPG",
-                subtitle: "Omni consists out of 4 vibrating cups connected to a hub."
+                src: "/images/inline-skating/total.jpeg",
+                subtitle: "The wearable worn by one of the skaters."
+            },
+            { id: 0,
+                src: "/images/inline-skating/knee-measuring.jpeg",
+                subtitle: "On the legs, two inertial measurement units were placed to measure the knee angle."
+            },
+            { id: 0,
+                src: "/images/inline-skating/motors-back.jpeg",
+                subtitle: "Vibration motors on the back provide feedback to the skater."
             },
         ]
     },
@@ -100,14 +116,14 @@ export const PortfolioItems = [
         name: "Portfolio",
         description: `To display my work, I have created the portfolio you are currently on. This was written in Angular combined with Tailwind CSS. 
         If you are excited about my portfolio or have feedback, contact me!`,
-        imgUrl: 'no_image.png',
-        expertise: ['Angular', 'Tailwind CSS', "UI Design", "HTML", "CSS", "Javascript"],
+        imgUrl: 'portfolio/portfolio1.png',
+        expertise: ['Angular', 'Tailwind CSS', "HTML", "CSS", "Javascript"],
         tags: ['Front-end'],
         weblink: 'angular-portfolio',
         slides: [
             { id: 0,
-                src: "/images/omni/omni1.JPG",
-                subtitle: "Omni consists out of 4 vibrating cups connected to a hub."
+                src: "/images/portfolio/portfolio1.png",
+                subtitle: "A screenshot of my portfolio!"
             },
         ]
     },

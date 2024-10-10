@@ -1,11 +1,11 @@
-<div class="flex flex-col px-40 py-10">
+<div class="flex flex-col mx-auto w-3/4 py-10">
   <p class="text-xl text-center text-gray-900 font-light">
     View the different projects I've done over the last years!
   </p>
   <div class="flex flex-row justify-end">
     @for (filter of filters; track filter) {
     <button
-      class="border border-blue-900 text-lg text-white p-1 mb-2
+      class="border border-blue-800 text-lg text-white p-1 mb-2
         {{ $first ? 'rounded-l-lg' : '' }}
         {{ $last ? 'rounded-r-lg' : '' }}
         {{ selectedFilter == filter ? 'bg-blue-600' : 'bg-blue-800' }}"
@@ -20,7 +20,7 @@
     @for (item of portfolioItems; track item.name) {
     <a routerLink="/portfolio/{{ item.weblink }}">
       <div
-        class="portfolio-item rounded-lg border border-gray-300 break-inside-avoid-column mb-4
+        class="portfolio-item rounded-lg border break-inside-avoid-column mb-4
       {{
           selectedFilter == 'All' || item.tags.includes(selectedFilter)
             ? 'show-item'
