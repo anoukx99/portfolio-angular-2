@@ -1,5 +1,5 @@
 <div class="max-w-screen h-full">
-  <div class="flex flex-row h-12 max-w-screen px-10 items-center pt-4">
+  <div class="flex flex-row h-12 max-w-screen lg:px-10 items-center pt-4">
     <nav class="flex flex-row w-full justify-start">
       <ul>
         <li class="px-2">
@@ -7,7 +7,7 @@
             routerLink="/portfolio"
             routerLinkActive="active"
             ariaCurrentWhenActive="page"
-            class="text-blue-800 text-xl"
+            class="text-blue-800 text-lg lg:text-xl"
             >Portfolio</a
           >
         </li>
@@ -16,18 +16,19 @@
             routerLink="/about-me"
             routerLinkActive="active"
             ariaCurrentWhenActive="page"
-            class="text-blue-800 text-xl"
+            class="text-blue-800 text-lg lg:text-xl"
             >About me</a
           >
         </li>
       </ul>
     </nav>
     <h1
-      class="text-blue-800 text-3xl font-bold logo flex w-full justify-center"
+      class="text-blue-800 text-xl hidden lg:flex font-bold logo flex w-full justify-center"
     >
       Anouk de Graaf
     </h1>
-    <div class="flex gap-4 py-2 w-full justify-end">
+
+    <div class="flex gap-4 py-2 px-2 w-full justify-end">
       @for (button of buttons; track button) {
       <a [href]="button.link">
         <ng-icon
