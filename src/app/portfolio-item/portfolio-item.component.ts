@@ -1,6 +1,6 @@
 import { AfterViewInit, Component, Input, OnInit } from '@angular/core';
 import { PortfolioItems } from '../portfolio-items';
-import { PortfolioItem } from '../portfolio-item.types';
+import { PortfolioItem } from '.';
 
 import { RouterLink } from '@angular/router';
 
